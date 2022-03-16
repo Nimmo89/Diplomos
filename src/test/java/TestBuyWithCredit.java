@@ -17,7 +17,7 @@ public class TestBuyWithCredit {
 
     @BeforeEach
     void shouldOpenApp() {
-//        DBHelper.clean();
+        DBHelper.clean();
         open("http://localhost:8080", MainPage.class);
         mainPage.buyWithCredit();
     }
