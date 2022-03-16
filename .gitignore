@@ -1,7 +1,7 @@
 HELP.md
 .gradle
-build/
-!**/reports
+/build/
+!/build/reports/*
 
 ### STS ###
 .apt_generated
