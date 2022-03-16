@@ -1,7 +1,7 @@
 # Дипломный проект по курсу «Тестировщик ПО»
 [План дипломного проекта](https://github.com/Nimmo89/Diplomos/blob/main/Plan.md)
 
-[Отчет по итогам тестирования]()
+[Отчет по итогам тестирования](https://github.com/Nimmo89/Diplomos/blob/main/Report.md)
 
 [Отчет по итогам автоматизации]()
 
@@ -39,4 +39,4 @@
 
 6.2 Запустить тесты командой `gradlew clean test -Durl="jdbc:postgresql://localhost:5432/app" -Duser="app" -Dpassword="pass" --info`
 
-7. Для получения отчета (Allure) использовать команду gradlew allureServe
+[//]: # (7. Для получения отчета &#40;Allure&#41; использовать команду gradlew allureServe)
