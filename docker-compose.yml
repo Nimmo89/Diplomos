@@ -1,18 +1,16 @@
 version: '3.7'
 services:
-    mysql:
-      image: mysql:8.0.
-      ports:
-        - '3306:3306'
-      security_opt:
-        - seccomp:unconfined
-      volumes:
-        - ./data_sql:/var/lib/sql
-      environment:
-        - MYSQL_RANDOM_ROOT_PASSWORD=yes
-        - MYSQL_DATABASE=app
-        - MYSQL_USER=user
-        - MYSQL_PASSWORD=pass
+  mysql:
+    image: mysql:8.0
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: pass
 #  postgresdb:
 #    image: postgres:latest
 #    ports:
