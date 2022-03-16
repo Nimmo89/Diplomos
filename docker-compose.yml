@@ -1,28 +1,28 @@
 version: '2.1'
 services:
-  #  mysql:
-  #    image: mysql:8.0.
-  #    ports:
-  #      - '3306:3306'
-  #    security_opt:
-  #      - seccomp:unconfined
-  #    volumes:
-  #      - ./data_sql:/var/lib/sql
-  #    environment:
-  #      - MYSQL_RANDOM_ROOT_PASSWORD=yes
-  #      - MYSQL_DATABASE=app
-  #      - MYSQL_USER=user
-  #      - MYSQL_PASSWORD=pass
-  postgresdb:
-    image: postgres:latest
-    ports:
-      - '5432:5432'
-    environment:
-      - POSTGRES_DB=app
-      - POSTGRES_USER=app
-      - POSTGRES_PASSWORD=pass
-  node-app:
-    build: ./gate-simulator
-    image: node-app:1.0
-    ports:
-      - 9999:9999
+    mysql:
+      image: mysql:8.0.
+      ports:
+        - '3306:3306'
+      security_opt:
+        - seccomp:unconfined
+      volumes:
+        - ./data_sql:/var/lib/sql
+      environment:
+        - MYSQL_RANDOM_ROOT_PASSWORD=yes
+        - MYSQL_DATABASE=app
+        - MYSQL_USER=user
+        - MYSQL_PASSWORD=pass
+#  postgresdb:
+#    image: postgres:latest
+#    ports:
+#      - '5432:5432'
+#    environment:
+#      - POSTGRES_DB=app
+#      - POSTGRES_USER=app
+#      - POSTGRES_PASSWORD=pass
+#  node-app:
+#    build: ./gate-simulator
+#    image: node-app:1.0
+#    ports:
+#      - 9999:9999
