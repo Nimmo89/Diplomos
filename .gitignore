@@ -6,7 +6,7 @@ node_modules
 .idea
 target
 *.iml
-
+!/build/reports
 # Ignore Gradle GUI config
 gradle-app.setting
 
