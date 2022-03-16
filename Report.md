@@ -8,7 +8,7 @@
 ### % успешных/не успешных
 Успешных - 30 (66%) Не успешных - 14 (34%)
 
-![](H:/Downloads/TestSummary.jpg)
+![TestSummary](https://user-images.githubusercontent.com/85748081/158627694-2113adbc-1320-477a-b7f1-9d376fc481b0.jpg)
 
 ### Общие рекомендации
 - Исправление багов добавленных в Issues и их закрытие
